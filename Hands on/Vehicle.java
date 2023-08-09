@@ -1,55 +1,58 @@
-package Oops;
+package Collection;
 
-class Vehicle 
+/*
+ Create an abstract class called "Vehicle" with abstract methods "start()" and "stop()". 
+ Create two subclasses "Car" and "Motorcycle" that extend the "Vehicle" class 
+ and implement the abstract methods. Write a Java program to demonstrate starting 
+ and stopping operations for a car and a motorcycle.
+ */
+
+abstract class Vehicle 
 {
-	String brand;
-	int year;
-	public void displayinfo()
-	{
-		System.out.println("Brand and year of the vehicle");
-	}
+	public abstract void start();
 	
+	public abstract void stop();
+		
 }
 
 class Car extends Vehicle
 {
-	String model;
-	//public void displayInfo()
+	public void start()
 	{
-		System.out.println("Beand and year of the vehicle");
-		
+		System.out.println("Car Start when Fuel is filled ");
 	}
-}
-class SportsCar extends Car
-{
-	int topspeed;
 	
-	public void displayinfo()
-
+	public void stop()
 	{
-		System.out.println("Brand,year,model and top speed of the sports car");
-		
+		System.out.println("Car Stop when breaks are applyed ");
 	}
-
 }
+
+class Motorcycle extends Vehicle
+{
+	public void start()
+	{
+		System.out.println("Motorcycle Start when Fuel is filled ");
+	}
+	
+	public void stop()
+	{
+		System.out.println("Motorcycle Stop when breaks are applyed ");
+	}
+}
+
 class VehicleMain
 {
-		public static void main(String[] args) 
+	public static void main(String[] args) 
 	{
-			//creating object of sub class 
-		SportsCar r=new SportsCar();
+		Car c = new Car();
+		c.start();
+		c.stop();
 		
-		r.brand="BMW";
-		r.model="M3";
-		r.year=2022;
-		r.topspeed=310;
+		Motorcycle m = new Motorcycle();
+		m.start();
+		m.stop();
 		
-		System.out.println("Brand name is :" + r.brand);
-		System.out.println("Model name is :" + r.model);
-		System.out.println("Year :" + r.year);
-		System.out.println("Top Speed :" + r.topspeed);
-	
-
 	}
 
 }
