@@ -29,7 +29,6 @@ public class Queuee
 		System.out.println("Removed Element is:" +q);
 		
 		
-		
 		// Check if the queue is empty
 	    System.out.println("Is queue empty? " + q.isEmpty());
 	    
