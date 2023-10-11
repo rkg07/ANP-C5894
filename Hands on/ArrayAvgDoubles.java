@@ -1,7 +1,7 @@
 package Array;
 
 /*
- * Write a Java program to find the average of all elements in an array of doubles.
+ Write a Java program to find the average of all elements in an array of doubles.
  */
 
 import java.util.Scanner;

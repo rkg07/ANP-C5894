@@ -28,12 +28,13 @@ public class ArrayMaxAndMin
 			
 		}
 		
-		// Displaying the element
+		// Declare and initialize variables to store the maximum and minimum elements
 		int min = num[0];
 		int max = num[0];
 		
 		for (i=0; i<size; i++)
 		{
+			// Using if else loop
 			if(num[i]>max)
 			{
 				max = num[i];
@@ -44,7 +45,7 @@ public class ArrayMaxAndMin
 				min = num[i];
 			}
 		}
-		
+		//Display the maximum and minimum elements
 		System.out.println("Maximun Number: " + max);
 		System.out.println("Minimum Number: " + min);
 		
