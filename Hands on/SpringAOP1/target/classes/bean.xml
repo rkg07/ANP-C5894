@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:aop="http://www.springframework.org/schema/aop"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+<bean id="cir" class="com.spring1.demo.Circle">
+<constructor-arg value="red"/>
+</bean>
+
+<bean id="rect" class="com.spring1.demo.Rectangle">
+<property name="color" value="green"/>
+</bean>
+
+<bean id="Padmaja" class="com.spring1.demo.Painter">
+<constructor-arg ref="cir"></constructor-arg>
+</bean>
+
+<bean id="Sameer" class="com.spring1.demo.Singer">
+</bean>
+<bean id="audiance" class="com.spring1.demo.Audiance"></bean>
+
+<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+<aop:config>
+
+	<aop:aspect ref="audiance">
+	<aop:pointcut expression="execution(* com.spring1.demo.Performer.perform(..))" id="mypointcut"/>
+	<aop:before method="takingSeats()" pointcut-ref="mypointcut"></aop:before>
+	<aop:before method="switchOffCellPhs()" pointcut-ref="mypointcut"></aop:before>
+	<aop:after-returning method="appluad()" pointcut-ref="mypointcut"></aop:after-returning>
+	<aop:after-throwing method="demandRefund()" pointcut-ref="mypointcut"></aop:after-throwing>
+	</aop:aspect>
+
+</aop:config>
+</beans>
