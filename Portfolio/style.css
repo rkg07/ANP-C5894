@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(153, 153, 226);
+    font-size: 1.04rem;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.left {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.left a {
+    text-decoration: none;
+    color: white;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.firstSection>div {
+    width: 37%;
+
+}
+
+.leftSection {
+    font-size: 3rem;
+
+}
+
+.rightSection img {
+    width: 70%;
+}
+
+.purple {
+    color: rgb(136, 54, 212);
+}
+
+#element {
+    color: rgb(136, 54, 212);
+}
+
+.rounded {
+    border-radius: 0.25rem !important;
+}
+
+/* About me */
+.aboutContainer {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.aboutContainer h1 {
+    font-size: 50px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #3e64ff;
+}
+
+.aboutItemsContainer {
+    color: rgb(255, 255, 255);
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    width: 100%;
+    grid-gap: 80px;
+}
+
+.about p {
+    text-align: center;
+}
+
+.about p a {
+    text-decoration: none;
+    color: white;
+
+}
+
+.aboutItemsContainer img {
+    width: 50%;
+    /* margin-left: 100px; */
+    border-radius: 0.8rem;
+}
+
+.about {
+    text-align: center;
+}
+.about p{
+    margin-bottom: 10px;
+}
+
+.abouth3 {
+    text-align: center;
+}
+
+.about-me p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about-me ul li {
+    margin-bottom: 5px;
+}
+
+.aboutbtn {
+    margin: 0px 9px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+}
+
+.aboutbtn:hover {
+    background-color: rgba(9, 0, 91, 0.903);
+}
+/* Education Css */
+.educationContainer {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.educationContainer h1 {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    /* border-bottom: 3px solid #3e64ff; */
+}
+
+.educationItemsContainer {
+    color: black;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    width: 100%;
+    grid-gap: 80px;
+}
+
+.education {
+    border: 3px solid #ececec;
+    padding: 40px;
+    background: #fff;
+    border-radius: 16px;
+}
+
+.education p {
+    margin-top: 10px;
+}
+
+
+/* Skil Css */
+
+
+.skillsContainer {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.skillsContainer h1 {
+    font-size: 50px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #3e64ff;
+}
+
+.skillsContainer span {
+    margin-top: 20px;
+}
+
+.skillsItemsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    width: 100%;
+    grid-gap: 40px;
+}
+
+.skillItem p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.outerdiv {
+    width: 100%;
+    height: 20px;
+    border-radius: 6px;
+    background-color: #c4c4c4;
+}
+
+.javadiv {
+    width: 85%;
+    height: 20px;
+    border-radius: 6px;
+    background-color: #3e64ff;
+}
+
+.htmldiv {
+    width: 80%;
+    height: 20px;
+    border-radius: 6px;
+    background-color: #3e64ff;
+}
+
+.cssdiv {
+    width: 80%;
+    height: 20px;
+    border-radius: 6px;
+    background-color: #3e64ff;
+}
+
+.ajsdiv {
+    width: 70%;
+    height: 20px;
+    border-radius: 6px;
+    background-color: #3e64ff;
+}
+
+/* Project Css */
+
+.projectsContainer {
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.projectsContainer h1 {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #3e64ff;
+}
+
+.projectItemsContainer {
+    color: black;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    width: 100%;
+    grid-gap: 80px;
+}
+
+.project {
+    border: 3px solid #ececec;
+    padding: 40px;
+    background: #fff;
+    border-radius: 16px;
+}
+
+.project p {
+    margin-top: 10px;
+}
+
+/* Certificate */
+.certificateContainer {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1100px; */
+    margin: auto;
+}
+
+.certificateContainer h1 {
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #3e64ff;
+}
+
+.certificate {
+    display: flex;
+    height: 400px;
+}
+
+.certificate img {
+    width: 90%;
+    margin-left: 20px;
+}
+
+.certificate h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+/* Contact Me */
+#contact-section {
+    margin-bottom: 150px;
+}
+
+.contactcontainer {
+    font-size: 50px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contactme {
+
+    display: flex;
+    justify-content: space-evenly
+}
+
+.contactme p a {
+    text-decoration: none;
+    color: white;
+}
+
+/* footer */
+
+footer {
+    background-color: #000135;
+}
+
+.footer {
+    display: flex;
+    padding: 23px 122px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer>div {
+    width: 223px;
+}
+
+footer .footer-rights {
+    text-align: center;
+    color: grey;
+    padding: 12px 0;
+}
+
+footer .footer-fourth ul {
+    text-decoration: none;
+    color: white;
+}
